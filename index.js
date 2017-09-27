@@ -46,7 +46,8 @@ function openAllLinks(pins) {
     pins
         .map(({ href }) => href)
         .map(inspect)
-        .forEach(open);
+        .forEach(link => open(link));
+
     return pins;
 }
 
@@ -66,4 +67,5 @@ tags
     .then(inspect)
     .then(searchForRemindPosts)
     .then(openAllLinks)
-    .then(() => tags.then(removeTags));
+    .then(() => tags.then(removeTags))
+    .catch(e => console.error(e));
