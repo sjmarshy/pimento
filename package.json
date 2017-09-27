@@ -1,0 +1,14 @@
+{
+  "name": "pimento",
+  "version": "1.0.0",
+  "description": "daemon to remind you about pinboard links",
+  "main": "index.js",
+  "author": "Sam Marshall <sjmarshy@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "axios": "^0.16.2",
+    "date-fns": "^1.28.5",
+    "lodash": "^4.17.4",
+    "open": "^0.0.5"
+  }
+}
